@@ -99,25 +99,25 @@ header {
           margin-top: 108px;
           right: 0;
           .item1 {
-            background: url('/img/slide1.png') 0 0;
+            background: url('img/slide1.png') 0 0;
             width: 240px;
             height: 446px;
             
           }
           .item2 {
-            background: url('/img/slide3.png') 0 0;
+            background: url('img/slide3.png') 0 0;
             width: 240px;
             height: 446px;
             margin-left: 50px;
           }
           .item3 {
-            background: url('/img/slide1.png') 0 0;
+            background: url('img/slide1.png') 0 0;
             width: 240px;
             height: 446px;
             margin-left: 105px;
           }
           .item4 {
-            background: url('/img/slide3.png') 0 0;
+            background: url('img/slide3.png') 0 0;
             width: 240px;
             height: 446px;
             margin-left: 160px;
@@ -383,7 +383,7 @@ header {
 
 footer {
   .subscribe {
-    background-image: url('/img/BG.png');
+    background-image: url('img/BG.png');
     margin-top: 50px;
     position: relative;
     .email {
