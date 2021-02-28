@@ -3,196 +3,180 @@ $primary_font:'Poppins', sans-serif;
 $secondary_font: Roboto;
 
 /*================COMMON=================*/
-.container {
+
+* {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+.row {
+  margin: 0;
+  padding: 0;
+}
+.container-small {
+  padding-left: 8.26%;
+  padding-right: 9.1%;
+  padding-top: 40px;
+}
+p {
+  font-size: 14px;
+}
+h1 {
+  font-size: 48px;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+h2 {
+  font-size: 40px;
+  color: #212121;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+.container {
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 0;
 }
 body {
   margin: 0;
   padding: 0;
 }
-ul li {
-  list-style: none;
-}
-.clear::after{
-  content: " ";
-  display: table;
-  clear: both;
-}
-.btn {
-        
-  padding: 15px 30px;
+.btn {      
+  padding: 27px 60px;
   text-decoration: none;
   color: #ffffff;
   border-radius: 35px;
-  margin-right: 10px;
-  margin-top: 56px;
   display: flex;
-  width: 153px;
-  height: 33px;
+  width: 222px;
+  height: 68px;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(to right, #e6162f , #fb7650);
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  font-family: "Lato";
+}
+.btn2 {      
+  padding: 27px 60px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 35px;
+  display: flex;
+  width: 222px;
+  height: 68px;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 900;
+  font-family: "Lato";
 }
 /*====================== Header ======================*/
-header {
-  
-   .header__left {
-     height: 50%;
-       float: left;
-       
-     .logo-box {
-      //  justify-content: space-between;
-       margin-left: 48%;
-       margin-top: 33px;
-       float: left;
-       
-       
-     }
-     &--intro {
-      position: absolute;
-      margin-left: 80px;
-      margin-top: 106px;
-      .p1{
-        font-size: 2.7em;
-        color: #000000;
-        font-weight: 700;
-        font-family: "Poppins";
-        letter-spacing: 1px;
-        line-height: 55px;
-        
-      }
-      .p2 {
-        font-size: 0.9em;
-        color: #434343;
-        font-weight: 600;
-        font-family: "Poppins";
-        margin-top: -32px;
-        margin-left: -1px;
-        letter-spacing: -0.9px;
-      }
-      .p3 {
-        font-size: 0.8em;
-        color: #727272;
-        font-weight: 400;
-        font-family: "Poppins";
-        line-height: 15.5px;
-      }
-      
+.main-content {
+  margin-top: -10px;
+}
+.header {
+  z-index: 1;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .logo-box {
     }
-     
-    }
-    .header__right {
-      height: 717px;
+    .menu {
+      z-index: 1;
+      i{
       float: right;
-      width: 50%;
-      &--slider {
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(to top, #f1f1f1, #f6f2f1);
-        float: right;
-       
-        .slide-box {
-          
-          width: 75%;
-          float: right;
-          margin-top: 108px;
-          right: 0;
-          .item1 {
-            background: url('img/slide1.png') 0 0;
-            width: 240px;
-            height: 446px;
-            
-          }
-          .item2 {
-            background: url('img/slide3.png') 0 0;
-            width: 240px;
-            height: 446px;
-            margin-left: 50px;
-          }
-          .item3 {
-            background: url('img/slide1.png') 0 0;
-            width: 240px;
-            height: 446px;
-            margin-left: 105px;
-          }
-          .item4 {
-            background: url('img/slide3.png') 0 0;
-            width: 240px;
-            height: 446px;
-            margin-left: 160px;
-          }
-          img{
-            height: 100%;
-            width: 85%;
-            margin-top: 10px;
-          }
-        }
-      }
+      font-size: 30px;
+      color: #fff;
       
-      
-      .menu-icon i{
-        float: right;
-        font-size: 30px;
-        margin-right: 10%;
-        color: #fff;
-        padding-top: 20px;
-        position: relative;
-      }
-      .menu-box {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 10%;
-          a {
-          text-decoration: none;
-          font-size: 2em;
-          
-          
-        }
-
-        padding-top: 20px;
       }
     }
-   }
-       
+  }
+}
+
+/*=========================Intro======================*/ 
+.intro {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8.26%;
+  margin-top: -40px;
+  &__text {
+    max-width: 48.5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+  }
+  &__slide {
+    width: 935px;
+    height: 750px;
+    max-width: 70%;
+    margin-left: -20%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f1f1f1;
+    .slider {
+      height: 62%;
+      width: 78%;
+      img {
+        width: 100%;
+      }
+      .item1 {
+        background: url('../img/slide1.png') 0 0;
+        width: 285px;
+        height: 475px;
+      }
+      .item2 {
+        background: url('../img/slide3.png') 0 0;
+        width: 285px;
+        height: 475px;
+
+      }
+      .item3 {
+        background: url('../img/slide1.png') 0 0;
+        width: 285px;
+        height: 475px;
+
+    }
+  }
+}
+}
+
+// ======================Section1=======================>
 .section1 {
   display: flex;
-  align-items: center;
-  margin-top: 77px;
-    .left {
-      
-      margin-left: 8%;
-      float: left;
-    img{
-      
+  flex-wrap: wrap;
+  align-items: flex-end;
+  flex-direction: row;
+  .left {
+    width: 60%;
+    max-height: 80%;
+    img {
       width: 100%;
-      height: 90%;
-      
-      }
+      height: 683px;
     }
+  }
   .right {
-    background-color: #ffffff;
-    margin-left: -13%;
-    float: left;
-    margin-top: 19%;
-    margin-right: 8%;
-    padding: 30px;
-    
-    .p1 {
-      font-size: 1.5em;
-      color: #212121;
-      font-weight: 700;
-      font-family: "Poppins";
+    width: 58%;
+    margin-left: -18%;
+    padding-top: 110px;
+    padding-bottom: 30px;
+    height: 60%;
+    background-color: #fff;
+    h2, p{
+      margin-left: 15%;
     }
-    .p2 {
-      font-size: 0.8em;
-      color: #727272;
-      font-weight: 400;
-      font-family: "Poppins";
-    }
+  }
 }
-}
+
+
+// ======================Section2 - Video ===============/
 .section2 {
   margin-top: 50px;
   video {
@@ -203,104 +187,92 @@ header {
   }
 }
 
-.content {
-  &__right img{
-    width: 50%;
-    margin-top: -100px;
-    position: absolute;
-    
+
+
+// ======================About-marketing event ==========/
+.about-marketing1 {
+  margin-top: -10%;
+  .content {
+    display: flex;
+    align-items: center;
+    &__right img{
+      width: 100%;
+    }
+    &__left {
+      height: 100%;
+      padding-right: 9%;
+    } 
+    .btn {
+      margin-top: 50px;
+    }
   }
-  &__left {
-    
-    .p1 {
-      font-size: 1.5em;
-      color: #212121;
-      font-weight: 700;
-      font-family: "Poppins";
-      padding-top: 30px;
-      padding-left: 60px;
-    }
-    .p3 {
-      font-size: 0.8em;
-      color: #212121;
-      font-weight: 400;
-      font-family: "Poppins";
-      padding-left: 60px;
-    }
-    a {
-      margin-left: 60px;
-    }
-    
-  }
-  
 }
+
+// ================Speakers ====================/
 .speakers {
+  margin-bottom: 50px;
   margin-top: 200px;
   &__intro {
     margin-bottom: 50px;
-    .p1 {
-      font-size: 1.5em;
-      color: #212121;
-      font-weight: 700;
-      font-family: "Poppins";
-      margin-left: 80px;
-    }
-    .p2 {
-      font-size: 0.8em;
-      color: #727272;
-      font-weight: 400;
-      font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
       text-align: center;
-      margin-left: 80px;
-    }
-    .p1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
   }
-  .img1:hover, .img1:active,
-  .img2:hover, .img2:active,
-  .img3:hover, .img3:active,
-  .img4:hover, .img4:active {
-    transform: scale(1.3);
-    transition: all, .5s;
-  }
+  
   .slider {
     .img1, .img2, .img3, .img4 {
-      max-width: 80%;
-      margin-left: 20%;
+      max-width: 110%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 108%;
+      }
+      transition: height;
       .p1{
-        margin-left: 80px;
         text-align: center;
-        font-size: 1.1em;
+        font-size: 20px;
         color: #212121;
         font-weight: 700;
         font-family: "Poppins";
       }
       .p2{
-        margin-left: 80px;
         text-align: center;
-        font-size: 0.8em;
+        font-size: 16px;
         color: #737373;
         font-weight: 400;
         font-family: "Poppins";
+        margin-top: -10px;
+        margin-bottom: 40px;
       }
+    }
+    .img1:hover, .img1:active,
+    .img2:hover, .img2:active,
+    .img3:hover, .img3:active,
+    .img4:hover, .img4:active {
+      
+        transform: scaleY(1.3);
+        transition: all, 1s;
     }
     
   }
-  
-}
+} 
+
+  // ==================Get tikket now ====================/
+
 .products-section {
   background-color: #f4f4f4;
   padding-bottom: 50px;
   h2 {
     text-align: center;
-    font-size: 2em;
     color: #212121;
     font-weight: 700;
-    font-family: "Poppins";
-    padding-top: 50px;
+    margin: 70px auto;
   }
   p {
     text-align: center;
@@ -309,16 +281,14 @@ header {
 }
 .products-box{
   background-color: #ffffff;
-  width: 75%;
+  
   height: 100%;
   box-shadow: 3px 5px 10px #e0e0e0;
   margin: 0 auto;
   padding:20px 0 40px;
   .btn {
-    margin: 0 auto;
-    
-    margin-top: 20px;
-    
+    margin: 45px auto;
+    margin-bottom: 30px;
   }
   p {
     font-size: 14px;
@@ -333,19 +303,23 @@ header {
     font-weight: 700;
     font-family: "Poppins";
     text-align: center;
-    margin-top: -50px;
+    margin-top: 15px;
+    margin-bottom: 45px;
   }
 }
 .products-box h3{
   font-weight: 700;
   color: #000000;
   text-align: center;
-  padding: 20px;
+  margin-top: 43px;
 }
 .products-box:hover, .products-box:active {
   transform: scale(1.1);
   transition: all, .5s;
 }
+
+
+// =====================Sponsors =============/
 .sponsor {
   p{
     text-align: center;
@@ -359,20 +333,8 @@ header {
   }
   h2 {
     text-align: center;
-    font-size: 2em;
-    color: #212121;
-    font-weight: 700;
-    font-family: "Poppins";
   }
   .trademark {
-    &__top {
-    
-    }
-    &__bot {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-    }
     .item {
       display: flex;
       justify-content: center;
@@ -381,87 +343,80 @@ header {
   }
 }
 
+// ===================Footer ==============/
 footer {
   .subscribe {
-    background-image: url('img/BG.png');
+    background-image: url('../img/BG.png');
     margin-top: 50px;
+    
     position: relative;
+    .text {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+      h2 {
+        line-height: 36px;
+        color: #f5f7f9;
+      }
+    }
     .email {
-      
-      position: absolute;
-      float: left;
-      
-      top: 45%;
-      left: 50%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
       .your-email {
-        float: left;
+        width: 70%;
         
       }
       .your-email input {
         border-radius: 40px;
-        height: 38px;
-        width: 250px;
+        height: 68px;
+        width: 100%;
         border: none;
-        font-size: 0.6em;
         color: #b4b4b4;
         font-weight: 400;
         font-family: "Poppins";
         padding-left: 20px;
+        position: relative;
       }
-      .submit input {
-        border: none;
-        width: 150px;
-        border-radius: 40px;
-        height: 40px;
-        margin-left: -30px;
-        width: 150px;
-        background-color: #000000;
-        font-size: 0.6em;
-        letter-spacing: 0px;
-        color: #ffffff;
-        font-weight: 700;
-        font-family: "Poppins";
-        text-align: center;
+      
+      .btn2{
+        position: absolute;
+        right: 1%;
+        font-size: 14px;
       }
       
       
     }
     .p1 {
-      font-size: 0.6em;
+      font-size: 14px;
       letter-spacing: 4px;
       color: #f5f7f9;
       font-weight: 700;
       font-family: "Poppins";
-      padding-left: 20%;
       margin-top: 50px;
-    }
-    .p2 {
-      font-size: 2em;
-      line-height: 36px;
-      color: #f5f7f9;
-      font-weight: 700;
-      font-family: "Poppins";
-      padding-left: 20%;
     }
   }
   .contact {
-    padding-top: 20px;
-    padding-bottom: 20px;
+
     background-color: #212121;
     color: #fff;
     position: relative;
-    font-size: 0.6em;
-    color: #ffffff;
     font-weight: 400;
     font-family: "Poppins";
     h4 {
-      font-size: 3em;
+      font-size: 14px;
+      color: #ffffff;
+      font-weight: 600;
+      font-family: "Poppins";
     }
-    p, i {
-      font-size: 2em;
+    p{
+      font-size: 13px;
+      color: #ffffff;
+      font-weight: 400;
+      font-family: "Poppins"
     }
     .logo {
-      padding-left: 7%;
       img {width: 80%;}
       
     }
@@ -479,63 +434,38 @@ footer {
 
 // REPONSIVE
 
-/* ipad pro to 1024px */
+/*================ ipad pro to 1024px =====================*/
 @media only screen and (max-width: 1024px){
   .btn {
-    width: 120px;
     text-align: center;
   }
-  header {
-    .header__left {
-      .logo-box {
-        margin-left: 50%;
-      }
-      &--intro{
-        margin-left: 80px;
-        .p1 {
-          font-size: 1.9em;
-        }
-        .p2 {
-          font-size: 0.8em;
-        }
-        .p3 {
-          font-size: 0.7em;
-        }
-      }
-    }
-  
-    .header__right {
+.intro {
+    &__slide {
       height: 600px;
       width: 67.5%;
-      margin-left: 155px;
-      float: left;
-      .slide-box {
+      .slider {
         .item1,.item2,.item3,.item4{
           width: 200px;
-          height: 370px;
+          height: 350px;
         }
-        .item2 {
-          margin-left: 60px;
-        }
-        .item3 {
-          margin-left: 120px;
-        }
-        .item4 {
-          margin-left: 180px;
-        }
-      }
-      
+      } 
     }
   }
 .section1 {
+    .left {
+      width: 70%;
+      max-height: 80%;
+      
+      img {
+        height: 600px;
+        position: relative;
+      }
+    }
     .right {
-      margin-top: 14%;
-      .p1 {
-        font-size: 1.2em;
-      }
-      .p2 {
-        font-size: 0.65em;
-      }
+      position: absolute;
+      right: 0;
+      padding-top: 70px;
+      height: 30%;
     }
   }
 .section2 {
@@ -546,11 +476,7 @@ footer {
   }
   .content {
     &__left {
-      .p1 {
-        font-size: 1.5em;
-      }
       .p3 {
-        font-size: 0.7em;
         width: 250px;
         margin-top: -20px;
         margin-bottom: -20px;
@@ -561,105 +487,92 @@ footer {
     }
   }
 }
+.about-marketing1 .content__left {
+  padding-top: 80px;
+}
+.products-section {
+  padding-left: 11%;
+}
 .speakers {
+    .img1:hover, .img1:active,
+    .img2:hover, .img2:active,
+    .img3:hover, .img3:active,
+    .img4:hover, .img4:active {
+        transform: scaleY(1.4);
+        transition: all, 1s;
+    }
   img {margin-left: 40px;}
 }
 .sponsor {
-  img {
-    width: 85%;
-  }
+  .trademark__top, .trademark__bot {
+    margin: 30px 0;
+    img {
+      width: 90%;
+    }
 }
-
+}
 footer {
   .subscribe {
-    .p1 {
-      font-size: 0.8em;
-    }
-    .p2 {
-      font-size: 2.5em;
-    }
-  .email {
-    .your-email{
-      input {
-        height: 60px;
-        width: 300px;
+    .email {
+      .your-email{
+        input {
+          height: 60px;
+          width: 300px;
+        }
       }
+      .btn2 {
+        height: 61px;
+        width: 160px;
+        }
     }
-    .submit {
-      input {
-      height: 62px;
-      margin-left: -45px;
-      width: 160px;
-      }
   }
-  }
-  }
+  
   .contact {
     .logo img{
       width: 100%;
       margin-left: -20px;
     }
-    .link {
-      h4 { font-size: 1.7em;}
-      p {font-size: 1em;}
-    }
-    .contact-us {
-      h4 { font-size: 1.7em;}
-      p {font-size: 1em;}
-    }
-    .social {
-      h4 { font-size: 1.7em;}
-      a {
-        font-size: 30px;
-      }
-    }
+    
   }
 }
 }
 /*------------- ipad  to 768px --------------*/
 @media only screen and (max-width: 768px){
-  header {
-    .header__left {
-      .logo-box {
-        margin-left: 50%;
-        a img {width: 150px;}
-        
-      }
-    }
-    .header__right {
-      width: 60.5%;
-      margin-right: -60px;
-      float: right;
-      margin-top: 0;
-      .slide-box {
-        margin-top: 60px;
+  .intro {
+    &__text {
+      max-width: 51%;
+      padding-top: 10%;
+  }
+    &__slide {
+      height: 500px;
+      width: 63%;
+      .slider {
         .item1,.item2,.item3,.item4{
-          width: 200px;
-          height: 370px;
-          
+          width: 140px;
+          height: 310px;
         }
-        .item2 {
-          margin-left: 100px;
-        }
-        .item3 {
-          margin-left: 200px;
-        }
-        .item4 {
-          margin-left: 300px;
-        }
-      }
-      
+      } 
     }
-}
-.section1 {
-  margin-top: 50px;
-  .left {
-    margin-left: 5%;
-    img {
-      width: 110%;
   }
+  .section1 {
+    .left {
+      width: 70%;
+      max-height: 80%;
+      
+      img {
+        height: 450px;
+        position: relative;
+      }
+    }
+    .right {
+      height: 52%;
+      top: 63%;
+      width: 53%;
+      p, h2 {
+        margin-left: 3%;
+    }
+    }
   }
-}
 .section2 {
   video {
     width: 100%;
@@ -675,16 +588,25 @@ footer {
   }
 }
 .speakers {
-  margin-left: 30px;
+  margin-top: 10px;
+  img {margin-left: 40px;}
 }
 .products-section {
   width: 108vw;
   .products-box {
     width: 90%;
+    .btn {
+      width: 100%;
+    }
   }
 }
 .sponsor {
-  width: 100%;
+  .trademark__top {
+    margin: 0;
+    img {
+      width: 90%;
+    }
+}
 }
 footer {
   width: 100%;
@@ -692,12 +614,15 @@ footer {
     padding-left: 10%;
   } 
   .your-email {
-    margin-top: -45px;
     font-size: 150%;
   }
   .submit {
-    margin-left: 45px;
     font-size: 150%;
+  }
+  .subscribe .email .btn2 {
+    position: absolute;
+    right: 1%;
+    font-size: 14px;
 }
 }
 }
@@ -705,236 +630,51 @@ footer {
 //other Mobile----------
 /*------------- ipad  to 420px --------------*/
 @media only screen and (max-width: 425px){
-header {
-    .header__left {
-      &--intro{
-        margin: 50px 0;
+  .intro {
+    display: flex;
+    flex-direction: column;
+    &__text {
+      max-width: 100%;
+      padding-top: 20%;
+  }
+    &__slide {
+      height: 300px;
+      width: 100%;
+      margin: 0 auto;
+      .slider {
         width: 100%;
-        p {text-align: center;}
-      }
-      .logo-box a img {
-        width: 250%;
-      }
-      .btn {margin: 30px auto;}
-    }
-    .header__right {
-      width: 100%;
-      height: 65vh;
-      margin-left: 0;
-      float: left;
-      margin-top: 400px;
-      .menu-icon i {
-        float: right;
-        font-size: 50px;
-        color: red;
-        margin-top: -465px;
-        margin-right: 30px;
-    }
-    .slide-box {
-      float: left;
-      width: 100%;
-    }
-  }
-}
-.section1 {
-  width: 100%;
-  margin-top: 50px;
-  .left {
-    margin-left: 0;
-    height: 60%;
-    img {
-      width: 100%;
-    }
-  }
-  .right {
-    margin-right: 0;
-    width: 140%;
-    margin-left: -40%;
-  }
-}
-.section2 {
-  video {
-    width: 100%;
-  }
-  .content {
-    
-    &__left {
-      margin-bottom: 100px;
-      .p1 .p3{
-        text-align: center;
-      }
-    }
-    &__right {
-      height: 50%;
-      margin-left: 0;
-      img {
-        width: 100%;
-        height: 50%;
-      }
-    }
-  }
-}
-.speakers {
-  width: 100%;
-  margin-top: 0;
-  margin-left: 0;
-  &__intro {
-    margin-left: -60px;
-  }
-  .slider {
-    .img1, .img2, .img3, .img4 {
-      margin-left: -40px;
-      .p1, .p2 {
-        margin-left: 56px;
-      }
-    }
-  }
-}
-.products-section {
-  width: 100%;
-  .products-box {
-    width: 70%;
-    margin-bottom: 20px;
-}
-}
-.sponsor {
-  width: 100%;
-}
-footer {
-  width: 100%;
-  .subscribe {
-    height: 50%;
-    .email {
-      top: 63%;
-      left: 15%;
-      .submit {
-        float: left;
-      }
-  }
-  }
-  .contact {
-    .logo {
-      padding-left: 7%;
-      width: 85%;
-    }
-    .link, .contact-us, .social {
-      text-align: center;
-      h4 {
-        font-size: 2.3em;
-        margin-bottom: -13px;
-      }
-      p {
-        font-size: 1.5em;
-      }
-    }
-    .contact-us i {
-      float: left;
-      padding-top: 2px;
-      padding-right: 3px;
-      position: absolute;   
-  }
-  }
-  .subscribe .email {
-    margin-top: 30px;
-    position: relative;
-    .submit {
-      input {
-        height: 30px;
-        width: 100px;
-      }
-    }
-    .your-email {
-      input {
-        height: 30px;
-        width: 250px;
-      }
-    }
-  }
-}
-
-}
-/*------------- ipad  to 375px --------------*/
-@media only screen and (max-width: 375px){
-  header {
-    
-    .header__left .logo-box a img {
-      width: 220%;
-    }
-    .header__right {
-      .slide-box {
-        .item1, .item2, .item3, .item4 {
-          height: 240px;
+        .item1,.item2,.item3,.item4{
+          width: 75px;
+          height: 220px;
         }
-      }
-    }
-    .header__right .menu-icon i {
-      font-size: 30px;
-      margin-top: -450px;
+      } 
     }
   }
-  .section1 .right {
-    margin-left: -30px;
-    padding: 5px;
-    width: 65%;
-    .p1 {
-      font-size: 1em;
+  .section1 {
+  .right {
+    margin-left: 0;
+      padding: 5px;
+      width: 145%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .p2 {
-      font-size: 0.5em;
-    }
+  .left{
+    img {
+    width: 145%;
+    height: 50%;
+    margin-left: 0;
+    } 
   }
-  .section1 .left img {
-    width: 88%;
-  }
-footer {
-  .subscribe {
-    height: 63%;
-    .text .p1, .p2{
-      margin-left: -30px;
-    }
-    .email .your-email {
-      margin-left: -20px;
-    }
-    .email .submit input {
-      margin-left: -65px;
-  }
-  .email {
-    margin-top: 30px;
-    position: relative;
-    .submit {
-      input {
-        height: 30px;
-        width: 100px;
-      }
-    }
-    .your-email {
-      input {
-        height: 30px;
-        width: 250px;
-      }
-    }
+}
   
-}
-}
-}
-}
-/*------------- ipad  to 320px --------------*/
-@media only screen and (max-width: 320px){
-header {
-    
-      .header__left .logo-box a img {
-        width: 210%;
-        margin-left: -15px;
-      }
-      .header__left--intro .p1 {
-        font-size: 1.5em;
-      }
-    }
   .section2 {
       .content {
         margin: 0;
         &__left {
-          width: 100%; 
+          width: 100%;
+          
         }
         &__right {
           width: 200px;
@@ -950,10 +690,13 @@ header {
       }
     }
     .speakers {
-      
+      margin-top: 10px;;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       &__intro {
-        margin-left: -35px;
         width: 100%;
+        margin-left: 5%;
       }
       .slider {
         .img1, .img2, .img3, .img4 {
@@ -970,6 +713,7 @@ header {
       }
     }
     .products-section {
+
       h2 {
         text-align: center;
         font-size: 2em;
@@ -978,8 +722,8 @@ header {
         font-family: "Poppins";
       }
       .products-box {
-        width: 75%;
-        margin: 35px;
+        width: 100%;
+        margin: 0;
         .products-price{
           font-size: 2em;
           margin-top: 0;
@@ -994,7 +738,9 @@ header {
         left: 10%;
       }
       .email .your-email input {
-      width: 270px;
+      height: 30px;
+      width: 240px;
+      margin-left: -15px;
       }
       .text .p1, .p2 {
         margin-left: -30px;
@@ -1005,12 +751,7 @@ header {
       .text .p2 {font-size: 1em;}
       .email {
         position: relative;
-        .submit {
-          input {
-            height: 30px;
-            width: 100px;
-          }
-        }
+      
         .your-email {
           input {
             height: 30px;
@@ -1021,6 +762,314 @@ header {
     }
     
   }
+  .btn2 {
+    height: 30px;
+    width: 60px;
+    padding: 0;
+}
+}
+footer .subscribe .email .btn2 {
+  height: 30px;
+  width: 100px;
+}
+footer .contact .link h4, footer .contact .contact-us h4, footer .contact .social h4 {
+  margin-bottom: 13px;
+}
+}
+/*------------- ipad  to 375px --------------*/
+@media only screen and (max-width: 375px){
+  .intro {
+    display: flex;
+    flex-direction: column;
+    &__text {
+      max-width: 100%;
+      padding-top: 20%;
+  }
+    &__slide {
+      height: 300px;
+      width: 100%;
+      margin: 0 auto;
+      .slider {
+        width: 100%;
+        .item1,.item2,.item3,.item4{
+          width: 75px;
+          height: 220px;
+        }
+      } 
+    }
+  }
+  .section1 {
+  .right {
+    margin-left: 0;
+      padding: 5px;
+      width: 145%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  .left{
+    img {
+    width: 145%;
+    height: 50%;
+    margin-left: 0;
+    } 
+  }
+}
+  
+  .section2 {
+      .content {
+        margin: 0;
+        &__left {
+          width: 100%;
+          
+        }
+        &__right {
+          width: 200px;
+          height: 200px;
+          margin-bottom: -50px;
+          img {
+            width: 60%;
+            height: 100%;
+            margin-left: 50px;
+           
+          }
+        }
+      }
+    }
+    .speakers {
+      margin-top: 10px;;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__intro {
+        width: 100%;
+        margin-left: 5%;
+      }
+      .slider {
+        .img1, .img2, .img3, .img4 {
+          margin-left: 0;
+          height: 50%;
+          .p1, .p2 {
+            margin-left: 10px;
+            font-size: 60%;
+          }
+        }
+      }
+      img {
+        margin-left: 0;
+      }
+    }
+    .products-section {
+
+      h2 {
+        text-align: center;
+        font-size: 2em;
+        color: #212121;
+        font-weight: 700;
+        font-family: "Poppins";
+      }
+      .products-box {
+        width: 100%;
+        margin: 0;
+        .products-price{
+          font-size: 2em;
+          margin-top: 0;
+        }
+      }
+    }
+  footer {
+    .subscribe {
+      height: 50%;
+      .email {
+        top: 74%;
+        left: 10%;
+      }
+      .email .your-email input {
+      height: 30px;
+      width: 240px;
+      margin-left: -15px;
+      }
+      .text .p1, .p2 {
+        margin-left: -30px;
+        margin-top: 0; 
+        margin-bottom: 0; 
+      }
+      .text .p1 {font-size: 0.4em;}
+      .text .p2 {font-size: 1em;}
+      .email {
+        position: relative;
+      
+        .your-email {
+          input {
+            height: 30px;
+            width: 250px;
+          }
+        }
+      
+    }
+    
+  }
+  .btn2 {
+    height: 30px;
+    width: 60px;
+    padding: 0;
+}
+}
+footer .subscribe .email .btn2 {
+  height: 30px;
+  width: 100px;
+}
+footer .contact .link h4, footer .contact .contact-us h4, footer .contact .social h4 {
+  margin-bottom: 13px;
+}
+}
+/*------------- ipad  to 320px --------------*/
+@media only screen and (max-width: 320px){
+  .intro {
+    display: flex;
+    flex-direction: column;
+    &__text {
+      max-width: 100%;
+      padding-top: 20%;
+  }
+    &__slide {
+      height: 300px;
+      width: 100%;
+      margin: 0 auto;
+      .slider {
+        width: 100%;
+        .item1,.item2,.item3,.item4{
+          width: 75px;
+          height: 220px;
+        }
+      } 
+    }
+  }
+  .section1 {
+  .right {
+    margin-left: 0;
+      padding: 5px;
+      width: 145%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  .left{
+    img {
+    width: 145%;
+    height: 50%;
+    margin-left: 0;
+    } 
+  }
+}
+  
+  .section2 {
+      .content {
+        margin: 0;
+        &__left {
+          width: 100%;
+          
+        }
+        &__right {
+          width: 200px;
+          height: 200px;
+          margin-bottom: -50px;
+          img {
+            width: 60%;
+            height: 100%;
+            margin-left: 50px;
+           
+          }
+        }
+      }
+    }
+    .speakers {
+      margin-top: 10px;;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__intro {
+        width: 100%;
+        margin-left: 5%;
+      }
+      .slider {
+        .img1, .img2, .img3, .img4 {
+          margin-left: 0;
+          height: 50%;
+          .p1, .p2 {
+            margin-left: 10px;
+            font-size: 60%;
+          }
+        }
+      }
+      img {
+        margin-left: 0;
+      }
+    }
+    .products-section {
+
+      h2 {
+        text-align: center;
+        font-size: 2em;
+        color: #212121;
+        font-weight: 700;
+        font-family: "Poppins";
+      }
+      .products-box {
+        width: 100%;
+        margin: 0;
+        .products-price{
+          font-size: 2em;
+          margin-top: 0;
+        }
+      }
+    }
+  footer {
+    .subscribe {
+      height: 50%;
+      .email {
+        top: 74%;
+        left: 10%;
+      }
+      .email .your-email input {
+      height: 30px;
+      width: 240px;
+      margin-left: -15px;
+      }
+      .text .p1, .p2 {
+        margin-left: -30px;
+        margin-top: 0; 
+        margin-bottom: 0; 
+      }
+      .text .p1 {font-size: 0.4em;}
+      .text .p2 {font-size: 1em;}
+      .email {
+        position: relative;
+      
+        .your-email {
+          input {
+            height: 30px;
+            width: 250px;
+          }
+        }
+      
+    }
+    
+  }
+  .btn2 {
+    height: 30px;
+    width: 60px;
+    padding: 0;
+}
+}
+footer .subscribe .email .btn2 {
+  height: 30px;
+  width: 100px;
+}
+footer .contact .link h4, footer .contact .contact-us h4, footer .contact .social h4 {
+  margin-bottom: 13px;
 }
 }
 
