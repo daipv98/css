@@ -18,6 +18,7 @@ $secondary_font: Roboto;
   padding-left: 8.26%;
   padding-right: 9.1%;
   padding-top: 40px;
+  max-width: 1440px;
 }
 p {
   font-size: 14px;
@@ -35,7 +36,6 @@ h2 {
   font-family: "Poppins";
 }
 .container {
-  max-width: 1440px;
   margin: 0 auto;
   padding: 0;
 }
@@ -76,6 +76,18 @@ body {
   font-family: "Lato";
 }
 /*====================== Header ======================*/
+.header {
+  .header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    a{
+      font-size: 200%;
+      color: #fff;
+    }
+  }
+}
 .main-content {
   margin-top: -10px;
 }
@@ -112,7 +124,7 @@ body {
     z-index: 1;
   }
   &__slide {
-    width: 935px;
+    // width: 935px;
     height: 750px;
     max-width: 70%;
     margin-left: -20%;
@@ -131,17 +143,20 @@ body {
         background: url('../img/slide1.png') 0 0;
         width: 285px;
         height: 475px;
+        min-width: 70%;
       }
       .item2 {
         background: url('../img/slide3.png') 0 0;
         width: 285px;
         height: 475px;
+        min-width: 70%;
 
       }
       .item3 {
         background: url('../img/slide1.png') 0 0;
         width: 285px;
         height: 475px;
+        min-width: 70%;
 
     }
   }
@@ -434,6 +449,19 @@ footer {
 
 // REPONSIVE
 
+@media only screen and (min-width: 1500px){
+  footer .subscribe .email .btn2 {
+
+    right: 18%;
+
+}
+footer .subscribe .text {
+  align-items: center;
+}
+footer .contact {
+  padding: 2%;
+}
+}
 /*================ ipad pro to 1024px =====================*/
 @media only screen and (max-width: 1024px){
   .btn {
