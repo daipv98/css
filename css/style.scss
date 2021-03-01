@@ -250,7 +250,7 @@ body {
       align-items: center;
       justify-content: center;
       img {
-        width: 108%;
+        width: 100%;
       }
       transition: height;
       .p1{
@@ -493,7 +493,7 @@ footer .contact {
       width: 67.5%;
       .slider {
         .item1,.item2,.item3,.item4{
-          width: 200px;
+          width: 190px;
           height: 350px;
         }
       } 
@@ -663,7 +663,8 @@ footer {
 .products-section {
 
   .products-box {
-    width: 90%;
+    width: 100%;
+    height: 95%;
     .btn {
       width: 85%;
     }
@@ -701,6 +702,9 @@ footer {
 //other Mobile----------
 /*------------- ipad  to 420px --------------*/
 @media only screen and (max-width: 425px){
+  .speakers .slider {
+    width: 100vw;
+  }
   h2 {
     text-align: center;
   }
@@ -816,10 +820,17 @@ footer {
     }
   footer {
     .subscribe {
+      .subscribe-box {
+        padding: 20px;
+      }
       .text {
         align-items: center;
         h2{
+          font-size: 30px;
           text-align: center;
+        }
+        p{
+          margin-left: -40px;
         }
       }
       .email .btn2 {
@@ -1133,8 +1144,13 @@ footer .contact .social {
       height: 50%;
       .email {
         top: 74%;
-        left: 10%;
+        left: 0;
       }
+      .email .btn2 {
+
+        right: 0;
+
+        }
       .email .your-email input {
       height: 30px;
       width: 240px;
