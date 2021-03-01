@@ -10,6 +10,10 @@ $secondary_font: Roboto;
   box-sizing: border-box;
   font-family: 'Poppins';
 }
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
 .row {
   margin: 0;
   padding: 0;
@@ -126,7 +130,7 @@ body {
   &__slide {
     // width: 935px;
     height: 750px;
-    max-width: 70%;
+    max-width: 75%;
     margin-left: -20%;
 
     display: flex;
@@ -482,6 +486,9 @@ footer .contact {
     text-align: center;
   }
 .intro {
+  .btn {
+    margin: 0 auto;
+  }
     &__slide {
       height: 600px;
       width: 67.5%;
@@ -573,9 +580,10 @@ footer {
   }
   
   .contact {
+    padding: 2%;
     .logo img{
       width: 100%;
-      margin-left: -20px;
+      margin-left: 0;
     }
     
   }
@@ -638,7 +646,7 @@ footer {
   img {margin-left: 40px;}
 }
 .products-section {
-  width: 108vw;
+
   .products-box {
     width: 90%;
     .btn {
@@ -669,23 +677,39 @@ footer {
     position: absolute;
     right: 1%;
     font-size: 14px;
+    
 }
+  .contact {
+    .logo, .link, .contact-us, .social {
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+  }
 }
 }
 
 //other Mobile----------
 /*------------- ipad  to 420px --------------*/
 @media only screen and (max-width: 425px){
+  .header .header-top a {
+    font-size: 200%;
+    color: darkgray;
+}
   .intro {
+    padding-left: 0;
     display: flex;
     flex-direction: column;
     &__text {
+      padding-left: 5%;
       max-width: 100%;
       padding-top: 20%;
   }
     &__slide {
       height: 300px;
       width: 100%;
+      max-width: 100%;
       margin: 0 auto;
       .slider {
         width: 100%;
@@ -778,6 +802,12 @@ footer {
     }
   footer {
     .subscribe {
+      .text {
+        align-items: center;
+        h2{
+          text-align: center;
+        }
+      }
       .email .btn2 {
         position: absolute;
         right: 15%;
@@ -826,10 +856,15 @@ footer .subscribe .email .btn2 {
 footer .contact .link h4, footer .contact .contact-us h4, footer .contact .social h4 {
   margin-bottom: 13px;
 }
+footer .contact .social {
+
+  flex-direction: row;
+}
 }
 /*------------- ipad  to 375px --------------*/
 @media only screen and (max-width: 375px){
   .intro {
+    padding-left: 0;
     display: flex;
     flex-direction: column;
     &__text {
@@ -839,7 +874,9 @@ footer .contact .link h4, footer .contact .contact-us h4, footer .contact .socia
     &__slide {
       height: 300px;
       width: 100%;
+      max-width: 100%;
       margin: 0 auto;
+      
       .slider {
         width: 100%;
         .item1,.item2,.item3,.item4{
@@ -931,6 +968,12 @@ footer .contact .link h4, footer .contact .contact-us h4, footer .contact .socia
     }
   footer {
     .subscribe {
+      .text {
+        align-items: center;
+        h2{
+          text-align: center;
+        }
+      }
       height: 50%;
       .email {
         top: 74%;
@@ -973,6 +1016,10 @@ footer .subscribe .email .btn2 {
 }
 footer .contact .link h4, footer .contact .contact-us h4, footer .contact .social h4 {
   margin-bottom: 13px;
+}
+footer .contact .social {
+
+  flex-direction: row;
 }
 }
 /*------------- ipad  to 320px --------------*/
@@ -980,14 +1027,17 @@ footer .contact .link h4, footer .contact .contact-us h4, footer .contact .socia
   .intro {
     display: flex;
     flex-direction: column;
+    padding-left: 0;
     &__text {
       max-width: 100%;
       padding-top: 20%;
-  }
+    }
     &__slide {
       height: 300px;
       width: 100%;
+      max-width: 100%;
       margin: 0 auto;
+      
       .slider {
         width: 100%;
         .item1,.item2,.item3,.item4{
@@ -1089,6 +1139,12 @@ footer .contact .link h4, footer .contact .contact-us h4, footer .contact .socia
       width: 240px;
       margin-left: -15px;
       }
+      .text {
+        align-items: center;
+        h2{
+          text-align: center;
+        }
+      }
       .text .p1, .p2 {
         margin-left: -30px;
         margin-top: 0; 
@@ -1115,12 +1171,17 @@ footer .contact .link h4, footer .contact .contact-us h4, footer .contact .socia
     padding: 0;
 }
 }
+
 footer .subscribe .email .btn2 {
   height: 30px;
   width: 100px;
 }
 footer .contact .link h4, footer .contact .contact-us h4, footer .contact .social h4 {
   margin-bottom: 13px;
+}
+footer .contact .social {
+
+  flex-direction: row;
 }
 }
 
