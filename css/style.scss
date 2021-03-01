@@ -342,7 +342,6 @@ body {
 .sponsor {
   p{
     text-align: center;
-    font-size: 0.8em;
     letter-spacing: 4px;
     color: #888888;
     font-weight: 700;
@@ -544,6 +543,9 @@ footer .contact {
 }
 .products-section {
   padding-left: 11%;
+  .products-box .btn {
+    width: 80%;
+}
 }
 .speakers {
     .img1:hover, .img1:active,
@@ -591,18 +593,31 @@ footer {
 }
 /*------------- ipad  to 768px --------------*/
 @media only screen and (max-width: 768px){
+  .header-top {
+    .logo-box {
+      margin-left: 9%;
+    }
+    .menu {
+      margin-right: 9%;
+    }
+  }
+  .container-small {
+    padding: 0;
+
+  }
   .intro {
     &__text {
       max-width: 51%;
       padding-top: 10%;
+      margin-bottom: 30px;
   }
     &__slide {
       height: 500px;
       width: 63%;
       .slider {
         .item1,.item2,.item3,.item4{
-          width: 140px;
-          height: 310px;
+          width: 110px;
+          height: 300px;
         }
       } 
     }
@@ -650,7 +665,7 @@ footer {
   .products-box {
     width: 90%;
     .btn {
-      width: 100%;
+      width: 85%;
     }
   }
 }
@@ -679,20 +694,17 @@ footer {
     font-size: 14px;
     
 }
-  .contact {
-    .logo, .link, .contact-us, .social {
-      display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    }
-  }
+  
 }
 }
 
 //other Mobile----------
 /*------------- ipad  to 420px --------------*/
 @media only screen and (max-width: 425px){
+  h2 {
+    text-align: center;
+  }
+  
   .header .header-top a {
     font-size: 200%;
     color: darkgray;
@@ -710,7 +722,7 @@ footer {
       height: 300px;
       width: 100%;
       max-width: 100%;
-      margin: 0 auto;
+      margin: 20px auto;
       .slider {
         width: 100%;
         .item1,.item2,.item3,.item4{
@@ -721,7 +733,9 @@ footer {
     }
   }
   .section1 {
+    
   .right {
+    
     margin-left: 0;
       padding: 5px;
       width: 145%;
@@ -738,7 +752,9 @@ footer {
     } 
   }
 }
-  
+.about-marketing1 .content__right {
+  padding-right: 0;
+}
   .section2 {
       .content {
         margin: 0;
@@ -786,7 +802,6 @@ footer {
 
       h2 {
         text-align: center;
-        font-size: 2em;
         color: #212121;
         font-weight: 700;
         font-family: "Poppins";
@@ -795,7 +810,6 @@ footer {
         width: 100%;
         margin: 0;
         .products-price{
-          font-size: 2em;
           margin-top: 0;
         }
       }
@@ -819,8 +833,8 @@ footer {
         left: 10%;
       }
       .email .your-email input {
-      height: 30px;
-      width: 240px;
+      height: 50px;
+      width: 270px;
       margin-left: -15px;
       }
       .text .p1, .p2 {
@@ -828,27 +842,19 @@ footer {
         margin-top: 0; 
         margin-bottom: 0; 
       }
-      .text .p1 {font-size: 0.4em;}
-      .text .p2 {font-size: 1em;}
-      .email {
-        position: relative;
-      
-        .your-email {
-          input {
-            height: 30px;
-            width: 250px;
+          .your-email {
+            input {
+              height: 50px;
+              width: 250px;
+            }
           }
-        }
-      
+        
+      }
     }
     
+    .about-marketing1 .content .btn {
+      margin: 50px auto;
   }
-  .btn2 {
-    height: 30px;
-    width: 60px;
-    padding: 0;
-}
-}
 footer .subscribe .email .btn2 {
   height: 30px;
   width: 100px;
@@ -860,9 +866,20 @@ footer .contact .social {
 
   flex-direction: row;
 }
+footer .contact .contact-box {
+  margin: 20px auto;
+  .link, .contact-us, .social {
+    padding: 20px;
+  }
+}
+footer .subscribe .email .btn2 {
+  height: 50px;
+  width: 100px;
+}
 }
 /*------------- ipad  to 375px --------------*/
 @media only screen and (max-width: 375px){
+  
   .intro {
     padding-left: 0;
     display: flex;
@@ -875,7 +892,7 @@ footer .contact .social {
       height: 300px;
       width: 100%;
       max-width: 100%;
-      margin: 0 auto;
+      margin: 20px auto;
       
       .slider {
         width: 100%;
@@ -904,7 +921,12 @@ footer .contact .social {
     } 
   }
 }
-  
+.about-marketing1 .content__left {
+  padding-right: 1%;
+}
+.about-marketing1 .content__right {
+  padding-right: 3%;
+}
   .section2 {
       .content {
         margin: 0;
@@ -952,7 +974,6 @@ footer .contact .social {
 
       h2 {
         text-align: center;
-        font-size: 2em;
         color: #212121;
         font-weight: 700;
         font-family: "Poppins";
@@ -961,7 +982,6 @@ footer .contact .social {
         width: 100%;
         margin: 0;
         .products-price{
-          font-size: 2em;
           margin-top: 0;
         }
       }
@@ -979,41 +999,21 @@ footer .contact .social {
         top: 74%;
         left: 10%;
       }
-      .email .your-email input {
-      height: 30px;
-      width: 240px;
-      margin-left: -15px;
-      }
+      
       .text .p1, .p2 {
         margin-left: -30px;
         margin-top: 0; 
         margin-bottom: 0; 
       }
-      .text .p1 {font-size: 0.4em;}
-      .text .p2 {font-size: 1em;}
+
       .email {
-        position: relative;
-      
-        .your-email {
-          input {
-            height: 30px;
-            width: 250px;
-          }
-        }
-      
+        position: relative;  
     }
     
   }
-  .btn2 {
-    height: 30px;
-    width: 60px;
-    padding: 0;
+  
 }
-}
-footer .subscribe .email .btn2 {
-  height: 30px;
-  width: 100px;
-}
+
 footer .contact .link h4, footer .contact .contact-us h4, footer .contact .social h4 {
   margin-bottom: 13px;
 }
@@ -1024,6 +1024,9 @@ footer .contact .social {
 }
 /*------------- ipad  to 320px --------------*/
 @media only screen and (max-width: 320px){
+  .header .header-top {
+    padding-left: 15px;
+}
   .intro {
     display: flex;
     flex-direction: column;
@@ -1036,7 +1039,7 @@ footer .contact .social {
       height: 300px;
       width: 100%;
       max-width: 100%;
-      margin: 0 auto;
+      margin: 20px auto;
       
       .slider {
         width: 100%;
@@ -1113,7 +1116,6 @@ footer .contact .social {
 
       h2 {
         text-align: center;
-        font-size: 2em;
         color: #212121;
         font-weight: 700;
         font-family: "Poppins";
@@ -1122,7 +1124,6 @@ footer .contact .social {
         width: 100%;
         margin: 0;
         .products-price{
-          font-size: 2em;
           margin-top: 0;
         }
       }
@@ -1150,14 +1151,12 @@ footer .contact .social {
         margin-top: 0; 
         margin-bottom: 0; 
       }
-      .text .p1 {font-size: 0.4em;}
-      .text .p2 {font-size: 1em;}
       .email {
         position: relative;
       
         .your-email {
           input {
-            height: 30px;
+            height: 50px;
             width: 250px;
           }
         }
@@ -1166,507 +1165,19 @@ footer .contact .social {
     
   }
   .btn2 {
-    height: 30px;
+    height: 50px;
     width: 60px;
     padding: 0;
 }
 }
 
 footer .subscribe .email .btn2 {
-  height: 30px;
+  height: 50px;
   width: 100px;
 }
 footer .contact .link h4, footer .contact .contact-us h4, footer .contact .social h4 {
   margin-bottom: 13px;
 }
-footer .contact .social {
 
-  flex-direction: row;
-}
 }
 
-  
-  
-// REPONSIVE test--------------------------------------------
-
-// /*------------- ipad  to 320px --------------*/
-// @media only screen and (max-width: 320px){
-//   header {
-    
-//     .header__left .logo-box a img {
-//       width: 210%;
-//       margin-left: -15px;
-//     }
-//     .header__left--intro .p1 {
-//       font-size: 1.5em;
-//     }
-//   }
-// footer {
-//   .subscribe .email {
-//     top: 74%;
-//     left: 10%;
-//   }
-//   .subscribe .email .your-email input {
-//   width: 270px;
-// }
-// }
-// }
-// /*------------- ipad  to 375px --------------*/
-// @media only screen and (max-width: 375px){
-//   header {
-    
-//     .header__left .logo-box a img {
-//       width: 220%;
-//     }
-//     .header__right {
-//       .slide-box {
-//         .item1, .item2, .item3, .item4 {
-//           height: 240px;
-//         }
-//       }
-//     }
-//     .header__right .menu-icon i {
-//       font-size: 30px;
-//       margin-top: -450px;
-//     }
-//   }
-//   .section1 .right {
-//     margin-left: -30px;
-//     padding: 5px;
-//     width: 65%;
-//     .p1 {
-//       font-size: 1em;
-//     }
-//     .p2 {
-//       font-size: 0.5em;
-//     }
-//   }
-//   .section1 .left img {
-//     width: 88%;
-//   }
-// footer {
-//   .subscribe {
-//     height: 63%;
-//     .text .p1, .p2{
-//       margin-left: -30px;
-//     }
-//     .email .your-email {
-//       margin-left: -20px;
-//     }
-//     .email .submit input {
-//       margin-left: -65px;
-//   }
-// }
-// }
-// }
-// /*------------- ipad  to 420px --------------*/
-// @media only screen and (max-width: 425px){
-//   header {
-//       .header__left {
-//         &--intro{
-//           margin: 50px 0;
-//           width: 100%;
-//           p {text-align: center;}
-//         }
-//         .logo-box a img {
-//           width: 250%;
-//         }
-//         .btn {margin: 30px auto;}
-//       }
-//       .header__right {
-//         width: 100%;
-//         height: 65vh;
-//         margin-left: 0;
-//         float: left;
-//         margin-top: 400px;
-//         .menu-icon i {
-//           float: right;
-//           font-size: 50px;
-//           color: red;
-//           margin-top: -465px;
-//           margin-right: 30px;
-//       }
-//       .slide-box {
-//         float: left;
-//         width: 100%;
-//       }
-//     }
-//   }
-//   .section1 {
-//     width: 100%;
-//     margin-top: 50px;
-//     .left {
-//       margin-left: 0;
-//       height: 60%;
-//       img {
-//         width: 100%;
-//       }
-//     }
-//     .right {
-//       margin-right: 0;
-//       width: 140%;
-//       margin-left: -40%;
-//     }
-//   }
-//   .section2 {
-//     video {
-//       width: 100%;
-//     }
-//     .content {
-      
-//       &__left {
-//         margin-bottom: 100px;
-//         .p1 .p3{
-//           text-align: center;
-//         }
-//       }
-//       &__right {
-//         height: 480px;
-//         margin-left: 0;
-//         img {
-//           width: 100%;
-//           height: 500px;
-//         }
-//       }
-//     }
-//   }
-//   .speakers {
-//     width: 100%;
-//     margin-top: 0;
-//     margin-left: 0;
-//     &__intro {
-//       margin-left: -60px;
-//     }
-//     .slider {
-//       .img1, .img2, .img3, .img4 {
-//         margin-left: -40px;
-//         .p1, .p2 {
-//           margin-left: 56px;
-//         }
-//       }
-//     }
-//   }
-//   .products-section {
-//     width: 100%;
-//     .products-box {
-//       width: 70%;
-//       margin-bottom: 20px;
-//   }
-//   }
-//   .sponsor {
-//     width: 100%;
-//   }
-//   footer {
-//     width: 100%;
-//     .subscribe {
-//       height: 50%;
-//       .email {
-//         top: 63%;
-//         left: 15%;
-//         .submit {
-//           float: left;
-//         }
-//     }
-//     }
-//     .contact {
-//       .logo {
-//         margin-left: 10%;
-//         width: 85%;
-//       }
-//       .link, .contact-us, .social {
-//         text-align: center;
-//         h4 {
-//           font-size: 2.3em;
-//           margin-bottom: -13px;
-//         }
-//         p {
-//           font-size: 1.5em;
-//         }
-//       }
-//       .contact-us i {
-//         float: left;
-//         padding-top: 2px;
-//         padding-right: 3px;
-//         position: absolute;   
-//     }
-//     }
-//   }
-//   }
-// /*------------- iphone 5 ngang  to 568px --------------*/
-// @media only screen and (max-width: 568px){
-//   header {
-//     .header__left {
-//       .logo-box {
-//         margin-left: 0;
-//       }
-//       &--intro {
-//         margin-left: 0;
-//           .p1 {
-//             font-size: 1.5em;
-//           }
-//           .p2 {
-//             font-size: 0.6em;
-//           }
-//           .p3 {
-//             font-size: 0.5em;
-//           }
-//         }
-//         .btn {
-//           width: 145px;
-//       }
-        
-//       }
-//     .header__right {
-//       width: 69.5%;
-//       height: 50%;
-//       margin-right: 0;
-//       float: right;
-//       margin-top: -59px;
-//       &--slider {
-//         width: 85%;
-//         .slide-box {
-//           .item1, .item2, .item3, .item4 {
-//             width: 185px;
-//             height: 250px;
-//           }
-//         }
-//       }
-//     }
-//   }
-//   .section2 {
-//     video {
-//       height: 100%;
-//     }
-//     .content {
-//       &__right {
-//         width: 70%;
-//         margin: 0 auto;
-//         img {
-//           width: 50%;
-//           margin-top: -30%;
-//           margin-left: 50%;
-//           height: 250px;
-//         }
-//       }
-//     }
-//   }    
-// }
-// /*------------- ipad  to 768px --------------*/
-// @media only screen and (max-width: 768px){
-//   header {
-//     .header__left {
-//       .logo-box {
-//         margin-left: 50%;
-//         a img {width: 150px;}
-        
-//       }
-//     }
-//     .header__right {
-//       width: 60.5%;
-//       margin-right: -60px;
-//       float: right;
-//       margin-top: 0;
-//       .slide-box {
-//         margin-top: 60px;
-//         .item1,.item2,.item3,.item4{
-//           width: 200px;
-//           height: 370px;
-          
-//         }
-//         .item2 {
-//           margin-left: 100px;
-//         }
-//         .item3 {
-//           margin-left: 200px;
-//         }
-//         .item4 {
-//           margin-left: 300px;
-//         }
-//       }
-      
-//     }
-// }
-// .section1 {
-//   margin-top: 50px;
-//   .left {
-//     margin-left: 5%;
-//     img {
-//       width: 110%;
-//   }
-//   }
-// }
-// .section2 {
-//   video {
-//     width: 100%;
-//   }
-//   .content {
-//     &__right {
-//       margin-left: 0;
-//       img {
-//         width: 420px;
-//         height: 500px;
-//       }
-//     }
-//   }
-// }
-// .speakers {
-//   margin-left: 30px;
-// }
-// .products-section {
-//   width: 108vw;
-//   .products-box {
-//     width: 90%;
-//   }
-// }
-// .sponsor {
-//   width: 100%;
-// }
-// footer {
-//   width: 100%;
-//   .your-email {
-//     margin-top: -45px;
-//     font-size: 150%;
-//   }
-//   .submit {
-//     margin-left: 45px;
-//     font-size: 150%;
-// }
-// }
-// }
-// /* ipad pro to 1024px */
-// @media only screen and (max-width: 1024px){
-//   .btn {
-//     width: 120px;
-//     text-align: center;
-//   }
-//   header {
-//     .header__left {
-//       .logo-box {
-//         margin-left: 50%;
-//       }
-//       &--intro{
-//         margin-left: 80px;
-//         .p1 {
-//           font-size: 1.9em;
-//         }
-//         .p2 {
-//           font-size: 0.8em;
-//         }
-//         .p3 {
-//           font-size: 0.7em;
-//         }
-//       }
-//     }
-  
-//     .header__right {
-//       height: 600px;
-//       width: 67.5%;
-//       margin-left: 155px;
-//       float: left;
-//       .slide-box {
-//         .item1,.item2,.item3,.item4{
-//           width: 200px;
-//           height: 370px;
-//         }
-//         .item2 {
-//           margin-left: 60px;
-//         }
-//         .item3 {
-//           margin-left: 120px;
-//         }
-//         .item4 {
-//           margin-left: 180px;
-//         }
-//       }
-      
-//     }
-//   }
-// .section1 {
-//     .right {
-//       margin-top: 14%;
-//       .p1 {
-//         font-size: 1.2em;
-//       }
-//       .p2 {
-//         font-size: 0.65em;
-//       }
-//     }
-//   }
-// .section2 {
-//   video {
-//     height: 50vh;
-//     width: 100%;
-//     margin-top: 0;
-//   }
-//   .content {
-//     &__left {
-//       .p1 {
-//         font-size: 1.5em;
-//       }
-//       .p3 {
-//         font-size: 0.7em;
-//         width: 250px;
-//         margin-top: -20px;
-//         margin-bottom: -20px;
-//       }
-//     }
-//     &__right {
-//       margin-left: 0;
-//     }
-//   }
-// }
-// .speakers {
-//   img {margin-left: 40px;}
-// }
-// .sponsor {
-//   img {
-//     width: 85%;
-//   }
-// }
-
-// footer {
-//   .subscribe {
-//     .p1 {
-//       font-size: 0.8em;
-//     }
-//     .p2 {
-//       font-size: 2.5em;
-//     }
-//   .email {
-//     .your-email{
-//       input {
-//         height: 60px;
-//         width: 300px;
-//       }
-//     }
-//     .submit {
-//       input {
-//       height: 62px;
-//       margin-left: -45px;
-//       width: 160px;
-//       }
-//   }
-//   }
-//   }
-//   .contact {
-//     .logo img{
-//       width: 100%;
-//       margin-left: -20px;
-//     }
-//     .link {
-//       h4 { font-size: 1.7em;}
-//       p {font-size: 1em;}
-//     }
-//     .contact-us {
-//       h4 { font-size: 1.7em;}
-//       p {font-size: 1em;}
-//     }
-//     .social {
-//       h4 { font-size: 1.7em;}
-//       a {
-//         font-size: 30px;
-//       }
-//     }
-//   }
-// }
-// }
