@@ -363,6 +363,9 @@ footer {
   .subscribe {
     background-image: url('../img/BG.png');
     margin-top: 50px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
     
     position: relative;
     .text {
@@ -448,18 +451,29 @@ footer {
 }
 
 // REPONSIVE
-
-@media only screen and (min-width: 1500px){
+// ==================== Big than 1024px ================/
+@media only screen and (min-width: 1025px){
   footer .subscribe .email .btn2 {
 
     right: 18%;
 
 }
 footer .subscribe .text {
-  align-items: center;
+  padding-left: 6%;
 }
 footer .contact {
   padding: 2%;
+  .contact-box .logo a{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    img {
+      width: 50%;
+    }
+  }
+}
+.about-marketing1 .content__left {
+  padding-top: 15%;
 }
 }
 /*================ ipad pro to 1024px =====================*/
@@ -480,6 +494,7 @@ footer .contact {
     }
   }
 .section1 {
+  position: relative;
     .left {
       width: 70%;
       max-height: 80%;
@@ -493,7 +508,9 @@ footer .contact {
       position: absolute;
       right: 0;
       padding-top: 70px;
-      height: 30%;
+      height: 85%;
+    bottom: 0;
+
     }
   }
 .section2 {
@@ -583,18 +600,19 @@ footer {
     }
   }
   .section1 {
+    position: relative;
     .left {
       width: 70%;
       max-height: 80%;
       
       img {
         height: 450px;
-        position: relative;
       }
     }
     .right {
-      height: 52%;
-      top: 63%;
+      position: absolute;
+      height: 100%;
+      top: 0;
       width: 53%;
       p, h2 {
         margin-left: 3%;
@@ -760,6 +778,11 @@ footer {
     }
   footer {
     .subscribe {
+      .email .btn2 {
+        position: absolute;
+        right: 15%;
+        font-size: 14px;
+        }
       height: 50%;
       .email {
         top: 74%;
