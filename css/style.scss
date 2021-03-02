@@ -11,8 +11,8 @@ $secondary_font: Roboto;
   font-family: 'Poppins';
 }
 .container-fluid {
-  padding: 0;
-  margin: 0;
+  padding: 0 ;
+  margin: 0 ;
 }
 .row {
   margin: 0;
@@ -41,7 +41,7 @@ h2 {
 }
 .container {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 ;
 }
 body {
   margin: 0;
@@ -179,6 +179,7 @@ body {
     img {
       width: 100%;
       height: 683px;
+      object-fit: cover;
     }
   }
   .right {
@@ -458,7 +459,7 @@ footer {
 @media only screen and (min-width: 1025px){
   footer .subscribe .email .btn2 {
 
-    right: 18%;
+    right: 1%;
 
 }
 footer .subscribe .text {
@@ -481,6 +482,10 @@ footer .contact {
 }
 /*================ ipad pro to 1024px =====================*/
 @media only screen and (max-width: 1024px){
+  footer .subscribe .email .btn2 {
+    right: 6%;
+
+}
   .btn {
     text-align: center;
   }
@@ -1197,3 +1202,21 @@ footer .contact .link h4, footer .contact .contact-us h4, footer .contact .socia
 
 }
 
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  footer .subscribe .email {
+    margin-left: 7%;
+    .your-email input {
+      width: 100%;
+  } 
+}
+footer .subscribe .email .btn2 {
+  position: absolute;
+  right: 10%;
+}
+footer .subscribe .text {
+  .p1 {
+    padding-left: 0;
+  }
+  padding-left: 10%;
+}
+}
